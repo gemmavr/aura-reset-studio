@@ -1,34 +1,34 @@
-import { useEffect, useState } from "react";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Manifesto from "./components/Manifesto.jsx";
 import Pillars from "./components/Pillars.jsx";
 import Editorial from "./components/Editorial.jsx";
+import Experiences from "./components/Experiences.jsx";
+import SensoryRitual from "./components/SensoryRitual.jsx";
 import FirstExperience from "./components/FirstExperience.jsx";
+import DigitalLayer from "./components/DigitalLayer.jsx";
 import AboutGemma from "./components/AboutGemma.jsx";
 import Waitlist from "./components/Waitlist.jsx";
 import Footer from "./components/Footer.jsx";
 import { translations } from "./data/translations.jsx";
 
 export default function App() {
-  const [language, setLanguage] = useState("es");
-  const copy = translations[language];
-
-  useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
+  const copy = translations.es;
 
   return (
-    <div className="min-h-screen bg-aura-shell text-aura-ink selection:bg-aura-clay selection:text-aura-warm">
-      <Header copy={copy.nav} language={language} onLanguageChange={setLanguage} />
+    <div className="min-h-screen bg-aura-shell text-aura-ink selection:bg-aura-clay selection:text-aura-ivory">
+      <Header copy={copy.nav} />
       <main>
         <Hero copy={copy.hero} />
         <Manifesto copy={copy.manifesto} />
-        <Pillars copy={copy.pillars} />
-        <Editorial copy={copy.editorial} />
-        <FirstExperience copy={copy.firstExperience} />
-        <AboutGemma copy={copy.about} />
-        <Waitlist copy={copy.waitlist} />
+        <Editorial copy={copy.universe} />
+        <Pillars copy={copy.method} />
+        <Experiences copy={copy.experiences} />
+        <SensoryRitual copy={copy.sensory} />
+        <FirstExperience copy={copy.event} />
+        <DigitalLayer copy={copy.digital} />
+        <AboutGemma copy={copy.origin} />
+        <Waitlist copy={copy.finalCta} />
       </main>
       <Footer copy={copy.footer} />
     </div>

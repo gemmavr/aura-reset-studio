@@ -1,38 +1,41 @@
 import Button from "./Button.jsx";
+import ImageSlot from "./ImageSlot.jsx";
 import SectionEyebrow from "./SectionEyebrow.jsx";
-import { images } from "../data/images.js";
-
 export default function Hero({ copy }) {
   return (
-    <section id="top" className="relative min-h-screen overflow-hidden bg-aura-ink text-aura-warm">
-      <img
-        src={images.hero}
-        alt={copy.imageAlt}
-        className="absolute inset-0 h-full w-full object-cover"
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(48,43,39,0.74),rgba(48,43,39,0.30)_55%,rgba(48,43,39,0.10))]" />
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-5 pb-10 pt-32 sm:px-8 lg:px-10">
-        <div className="max-w-3xl pb-12 sm:pb-16">
-          <SectionEyebrow light>{copy.eyebrow}</SectionEyebrow>
-          <h1 className="max-w-2xl font-serif text-6xl leading-[0.92] text-aura-warm sm:text-7xl lg:text-8xl">
+    <section id="top" className="relative min-h-screen scroll-mt-20 overflow-hidden bg-aura-shell px-5 pb-16 pt-24 sm:px-8 sm:pt-28 lg:px-10">
+      <div className="atlantic-halo absolute -right-28 top-16 h-96 w-96 rounded-full opacity-50 blur-3xl" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-aura-softWhite/80 to-transparent" />
+      <div className="relative mx-auto grid max-w-7xl gap-10 sm:gap-16 lg:min-h-[calc(100vh-6rem)] lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div className="max-w-3xl pb-4 lg:pb-0">
+          <SectionEyebrow>{copy.eyebrow}</SectionEyebrow>
+          <h1 className="font-serif text-[3.55rem] leading-[0.8] text-aura-ink sm:text-[4.65rem] sm:leading-[0.82] lg:text-[6.4rem] xl:text-[7.35rem]">
             {copy.title}
           </h1>
-          <p className="mt-7 max-w-xl text-lg leading-8 text-aura-warm/88 sm:text-xl">
+          <p className="mt-6 max-w-xl text-base leading-7 text-aura-ink/72 sm:text-xl sm:leading-8">
             {copy.subtitle}
           </p>
-          <p className="mt-5 max-w-lg text-sm leading-7 text-aura-warm/75">
-            {copy.text}
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button variant="secondary">{copy.primary}</Button>
-            <Button href="#experience" variant="secondary" className="bg-transparent">
+          <div className="mt-7 flex flex-col gap-3 text-aura-ink sm:mt-9 sm:flex-row">
+            <Button>{copy.primary}</Button>
+            <Button href="#metodo" variant="secondary">
               {copy.secondary}
             </Button>
           </div>
+          <div className="mt-8 flex max-w-lg items-start gap-4 border-t border-aura-ink/12 pt-5 sm:mt-12 sm:pt-6">
+            <span className="mt-2 h-2.5 w-2.5 flex-none rounded-full bg-aura-halo" />
+            <p className="text-xs font-semibold uppercase leading-6 tracking-[0.22em] text-aura-stone">{copy.note}</p>
+          </div>
         </div>
-        <div className="flex items-end justify-between border-t border-aura-warm/25 pt-5 text-xs uppercase tracking-[0.22em] text-aura-warm/75">
-          <span>{copy.signature}</span>
-          <span className="hidden sm:inline">{copy.mantra}</span>
+        <div className="relative min-h-[430px] sm:min-h-[560px] lg:min-h-[720px]">
+          <ImageSlot
+            src={copy.imageSrc}
+            label={copy.imageAlt}
+            className="absolute right-0 top-0 h-full w-[90%] rounded-[2rem] shadow-image transition duration-700 hover:scale-[1.006] sm:rounded-[3rem]"
+          />
+          <div className="absolute bottom-10 left-0 hidden w-[38%] rounded-[1.5rem] border border-aura-ink/10 bg-aura-softWhite/86 p-5 backdrop-blur lg:block">
+            <div className="atlantic-halo mb-8 h-20 w-20 rounded-full" />
+            <p className="font-serif text-3xl leading-none text-aura-deepAtlantic">Reset rituals by the Atlantic.</p>
+          </div>
         </div>
       </div>
     </section>

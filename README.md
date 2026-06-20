@@ -1,6 +1,8 @@
-# AURA RESET STUDIO
+# AURA Reset Studio
 
-Premium wellness landing page created with React, Vite and Tailwind CSS.
+Landing editorial para AURA Reset Studio, creada con Next.js, TypeScript y Tailwind CSS.
+
+Concepto: experiencias presenciales de bienestar nacidas desde Barcelona y Las Palmas para bajar el ruido y volver al cuerpo.
 
 ## Local development
 
@@ -9,12 +11,10 @@ npm install
 npm run dev
 ```
 
-Open `http://127.0.0.1:5173/`.
+Open `http://127.0.0.1:3000/`.
 
 ## Production build
 
 ```bash
 npm run build
 ```
-
-The static output is generated in `dist/`. The Vite `base` is set to `./` so the site is ready to publish later on GitHub Pages.

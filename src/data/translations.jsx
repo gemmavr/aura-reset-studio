@@ -1,236 +1,207 @@
-export const translations = {
-  en: {
-    nav: {
-      experience: "The Experience",
-      about: "About",
-      join: "Join",
-      waitlist: "Join the waitlist",
-      menu: "Open menu",
-    },
-    hero: {
-      eyebrow: "AURA RESET STUDIO · LAS PALMAS",
-      title: "Come back to yourself.",
-      subtitle:
-        "Yoga, rituals and mindful experiences for women ready to slow down without losing their ambition.",
-      text: "A softer way to move, breathe and reconnect - in Las Palmas and online.",
-      primary: "Join the first reset",
-      secondary: "Discover Aura",
-      signature: "Created by YogaWithGem",
-      mantra: "Move. Breathe. Connect. Reset.",
-      imageAlt: "Morning sea light in Las Palmas",
-    },
-    manifesto: {
-      title: (
-        <>
-          You're doing everything.
-          <br />
-          But you don't feel like yourself.
-        </>
-      ),
-      paragraphs: [
-        "You work. You answer. You plan. You keep going. And somewhere between productivity and survival, you stopped feeling present in your own life.",
-        "Aura is not about pushing harder. It is about creating space to come back to your body, your breath and your own rhythm.",
-      ],
-      highlight: "Not a class. A reset.",
-    },
-    pillars: {
-      eyebrow: "The Experience",
-      title: "A modern reset ritual for real life.",
-      subtitle:
-        "Created for women who want to feel more grounded, present and connected - without having to escape their real lives.",
-      items: [
-        {
-          title: "MOVE",
-          text: "Slow vinyasa and grounding movement designed to bring you back into your body.",
-        },
-        {
-          title: "BREATHE",
-          text: "Guided pauses, breath and quiet rituals to soften the noise of the day.",
-        },
-        {
-          title: "CONNECT",
-          text: "Small, thoughtful experiences for women craving something real.",
-        },
-      ],
-    },
-    editorial: {
-      title: (
-        <>
-          Move. Breathe.
-          <br />
-          Connect. Reset.
-        </>
-      ),
-      text: "A slower way to experience Las Palmas.",
-      alt: {
-        seaWoman: "Woman in quiet morning light by the sea",
-        journal: "Journal and slow morning ritual",
-        group: "Small mindful outdoor movement group",
+const es = {
+  nav: {
+    method: "El método",
+    experiences: "Experiencias",
+    place: "Las Palmas",
+    journal: "Journal",
+    waitlist: "Únete al primer reset",
+    menu: "Abrir menú",
+  },
+  hero: {
+    eyebrow: "CREADO EN LAS PALMAS · RESET BY THE ATLANTIC",
+    title: (
+      <>
+        Vuelve a ti
+        <br />
+        con más luz.
+      </>
+    ),
+    subtitle:
+      "Movimiento suave, respiración y rituales guiados para personas que necesitan bajar el ruido y recuperar claridad junto al Atlántico.",
+    primary: "Únete al primer reset",
+    secondary: "Descubre el método",
+    note: "Experiencias presenciales en Las Palmas · Acceso digital próximamente",
+    imageSrc:
+      "https://images.unsplash.com/photo-1775169726139-82f78b87b8a4?auto=format&fit=crop&w=1400&q=78",
+    imageAlt: "Hero editorial con luz atlántica y persona en pausa junto al mar",
+  },
+  manifesto: {
+    title: (
+      <>
+        No necesitas otra rutina que cumplir.
+        <br />
+        Necesitas un espacio para volver a ti.
+      </>
+    ),
+    text:
+      "Aura nace en Las Palmas para transformar una pausa en un ritual: liberar tensión, respirar, escribir y salir con más claridad.",
+  },
+  universe: {
+    title: "A new kind of reset",
+    marquee:
+      "MINDFUL MOVEMENT · BREATH RITUALS · GUIDED JOURNALING · ATLANTIC WATER · SUNSET SESSIONS · CONSCIOUS COMMUNITY",
+    slots: [
+      {
+        src: "https://images.unsplash.com/photo-1581020964928-98b7ed232e07?auto=format&fit=crop&w=1400&q=78",
+        label: "Tierra volcánica canaria",
+        size: "large",
       },
-    },
-    firstExperience: {
-      eyebrow: "COMING SOON · LAS PALMAS DE GRAN CANARIA",
-      title: "The first Aura Reset Experience",
-      text:
-        "A curated morning designed to help you pause, move and reconnect in a setting that feels calm, beautiful and real.",
-      items: [
-        "Slow vinyasa practice",
-        "Guided grounding ritual",
-        "Journaling moment",
-        "Thoughtful closing experience",
-        "Small group setting",
-      ],
-      cta: "Be the first to know",
-      note: "Limited first sessions. Join the waitlist for early access.",
-    },
-    about: {
-      eyebrow: "BEHIND AURA",
-      title: "Created by YogaWithGem",
-      signature: "Created by YogaWithGem",
-      alt: "Natural portrait of the Aura founder",
-      paragraphs: [
-        "Aura was born from a place I know well: having a life that looked full on the outside, while feeling disconnected on the inside.",
-        "After years moving through fast-paced work, constant goals and the pressure to keep going, I began looking for a softer way to live - without giving up ambition, curiosity or independence.",
-        "Aura is the space I wanted to find: movement, rituals and honest connection for women who are ready to slow down and feel present again.",
-      ],
-      highlight: "For the woman who wants a softer life, not a smaller one.",
-    },
-    waitlist: {
-      eyebrow: "Join the circle",
-      title: "Your reset starts here.",
-      text:
-        "Join the Aura circle for first access to upcoming experiences, rituals and thoughtful updates from Las Palmas.",
-      label: "Email address",
-      placeholder: "your@email.com",
-      button: "Join the circle",
-      invalid: "Please enter a valid email.",
-      success: "You're in. We'll meet you there soon.",
-      microcopy: "No noise. Only thoughtful updates.",
-    },
-    footer: {
-      signature: "Created by YogaWithGem",
-      location: "Las Palmas de Gran Canaria",
-      instagram: "Instagram",
-      email: "Email",
-      waitlist: "Join the waitlist",
-      mantra: "Move. Breathe. Connect. Reset.",
+      {
+        src: "https://images.unsplash.com/photo-1646941836303-12a0a6bff9b6?auto=format&fit=crop&w=1100&q=78",
+        label: "Movimiento suave",
+        size: "medium",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?auto=format&fit=crop&w=1100&q=78",
+        label: "Journal y pausa",
+        size: "small",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1760774714285-61ff516f86c5?auto=format&fit=crop&w=1400&q=78",
+        label: "Comunidad tranquila",
+        size: "wide",
+      },
+    ],
+  },
+  method: {
+    title: "The Aura Reset Method",
+    subtitle:
+      "Un ritual en cuatro movimientos para soltar lo que pesa y volver con más espacio, presencia y energía.",
+    items: [
+      {
+        number: "01",
+        title: "Libera",
+        text: "Movimiento suave para soltar tensión del cuerpo y dejar atrás el día.",
+      },
+      {
+        number: "02",
+        title: "Regula",
+        text: "Respiración y pausa para bajar el ruido y recuperar tu ritmo.",
+      },
+      {
+        number: "03",
+        title: "Reconecta",
+        text: "Journaling y presencia para volver a escucharte.",
+      },
+      {
+        number: "04",
+        title: "Expande",
+        text: "Claridad, energía y comunidad para regresar a tu vida desde otro lugar.",
+      },
+    ],
+    image: {
+      src: "https://images.unsplash.com/photo-1775169726139-82f78b87b8a4?auto=format&fit=crop&w=1400&q=78",
+      label: "Respiración y agua",
     },
   },
-  es: {
-    nav: {
-      experience: "La experiencia",
-      about: "Sobre Aura",
-      join: "Unirme",
-      waitlist: "Lista de espera",
-      menu: "Abrir menú",
-    },
-    hero: {
-      eyebrow: "AURA RESET STUDIO · LAS PALMAS",
-      title: "Vuelve a ti.",
-      subtitle:
-        "Yoga, rituales y experiencias conscientes para mujeres que quieren bajar el ritmo sin renunciar a su ambición.",
-      text: "Una forma más suave de moverte, respirar y reconectar - en Las Palmas y online.",
-      primary: "Unirme al primer reset",
-      secondary: "Descubrir Aura",
-      signature: "Created by YogaWithGem",
-      mantra: "Mueve. Respira. Conecta. Reset.",
-      imageAlt: "Luz de mañana junto al mar en Las Palmas",
-    },
-    manifesto: {
-      title: (
-        <>
-          Lo estás sosteniendo todo.
-          <br />
-          Pero no te sientes como tú.
-        </>
-      ),
-      paragraphs: [
-        "Trabajas. Respondes. Planificas. Sigues adelante. Y en algún punto entre la productividad y la supervivencia, dejaste de sentirte presente en tu propia vida.",
-        "Aura no va de exigirte más. Va de crear espacio para volver a tu cuerpo, a tu respiración y a tu propio ritmo.",
-      ],
-      highlight: "No es una clase. Es un reset.",
-    },
-    pillars: {
-      eyebrow: "La experiencia",
-      title: "Un ritual de reset moderno para la vida real.",
-      subtitle:
-        "Creado para mujeres que quieren sentirse más enraizadas, presentes y conectadas - sin tener que escapar de su vida real.",
-      items: [
-        {
-          title: "MUEVE",
-          text: "Vinyasa lento y movimiento de raiz para volver al cuerpo con presencia.",
-        },
-        {
-          title: "RESPIRA",
-          text: "Pausas guiadas, respiración y rituales sencillos para suavizar el ruido del día.",
-        },
-        {
-          title: "CONECTA",
-          text: "Experiencias pequeñas y cuidadas para mujeres que buscan algo real.",
-        },
-      ],
-    },
-    editorial: {
-      title: (
-        <>
-          Mueve. Respira.
-          <br />
-          Conecta. Reset.
-        </>
-      ),
-      text: "Una forma más lenta de vivir Las Palmas.",
-      alt: {
-        seaWoman: "Mujer en luz suave de mañana junto al mar",
-        journal: "Journal y ritual de mañana lenta",
-        group: "Grupo pequeño de movimiento consciente al aire libre",
+  experiences: {
+    title: "Choose your reset",
+    subtitle: "Empieza con el ritual que tu día necesita.",
+    cta: "Ver la primera experiencia",
+    items: [
+      {
+        title: "SUNSET RESET",
+        text: "Movimiento suave, respiración y ritual atlántico al caer la tarde.",
+        meta: "Las Palmas · Sesión presencial",
       },
+      {
+        title: "MORNING RESET",
+        text: "Una práctica luminosa para empezar el día con cuerpo y claridad.",
+        meta: "Las Palmas · Próximamente",
+      },
+      {
+        title: "BREATH & JOURNAL",
+        text: "Un ritual íntimo para vaciar la cabeza y reconectar contigo.",
+        meta: "Digital · Próximamente",
+      },
+      {
+        title: "THE FIRST RESET",
+        text: "Siete días de rituales guiados para integrar el método Aura.",
+        meta: "Acceso fundador · Próximamente",
+      },
+    ],
+  },
+  sensory: {
+    label: "Designed in Las Palmas de Gran Canaria",
+    title: (
+      <>
+        More than a class.
+        <br />
+        A ritual by the Atlantic.
+      </>
+    ),
+    text:
+      "Llegas como estás. Te mueves. Respiras. Escribes. Te tomas un momento frente al mar. Y vuelves a tu día con algo más de espacio dentro.",
+    items: [
+      "Movimiento consciente",
+      "Respiración guiada",
+      "Journal card",
+      "Atlantic Water Ritual",
+      "Tiempo para conectar",
+    ],
+    image: {
+      src: "https://images.unsplash.com/photo-1680169169606-5614379c4490?auto=format&fit=crop&w=1100&q=78",
+      label: "Cactus y tierra volcánica",
     },
-    firstExperience: {
-      eyebrow: "PRÓXIMAMENTE · LAS PALMAS DE GRAN CANARIA",
-      title: "La primera Aura Reset Experience",
-      text:
-        "Una mañana curada para ayudarte a pausar, moverte y reconectar en un entorno que se siente calmado, bello y real.",
-      items: [
-        "Práctica de slow vinyasa",
-        "Ritual guiado de grounding",
-        "Momento de journaling",
-        "Cierre cuidado de la experiencia",
-        "Grupo pequeño",
-      ],
-      cta: "Ser la primera en saberlo",
-      note: "Primeras sesiones limitadas. Únete a la lista de espera para acceso anticipado.",
+  },
+  event: {
+    title: "SUNSET RESET",
+    subtitle: "La primera experiencia Aura en Las Palmas.",
+    text:
+      "Un encuentro íntimo de movimiento suave, respiración, journaling y ritual de cierre para bajar el ruido del día junto al Atlántico.",
+    details: ["75 min", "Plazas limitadas", "Las Palmas de Gran Canaria", "Fecha próximamente"],
+    cta: "Quiero estar en la lista",
+    nameLabel: "Nombre",
+    namePlaceholder: "Tu nombre",
+    emailLabel: "Email",
+    emailPlaceholder: "Tu email",
+    consent: "Quiero recibir novedades sobre la primera experiencia Aura.",
+    button: "Reservar mi acceso",
+    invalidEmail: "Introduce un email válido.",
+    invalidConsent: "Confirma que quieres recibir novedades de Aura.",
+    success: "Ya estás dentro. Te avisaremos cuando abramos la primera experiencia Aura.",
+  },
+  digital: {
+    title: "Take the reset with you",
+    text:
+      "Aura continúa después de la sesión. Rituales de 5, 10 o 20 minutos para respirar, moverte y volver a ti según cómo llegues hoy.",
+    question: "¿Cómo llegas hoy?",
+    options: ["Saturada", "Sin energía", "Inquieta", "Desconectada"],
+    recommendation: "Evening Reset · 10 min",
+    cta: "Comenzar",
+  },
+  origin: {
+    title: (
+      <>
+        Born in Las Palmas.
+        <br />
+        Shaped by the Atlantic.
+      </>
+    ),
+    text:
+      "Aura nace de una forma de vivir donde la luz, el mar y el cuerpo recuerdan que siempre puedes parar y volver a empezar. Creamos experiencias de reset para una ciudad llena de personas que hacen mucho, piensan mucho y también necesitan volver a respirar.",
+    image: {
+      src: "https://images.unsplash.com/photo-1535209878348-6faa46d6e7e0?auto=format&fit=crop&w=1300&q=78",
+      label: "Canarias, volcán y Atlántico",
     },
-    about: {
-      eyebrow: "DETRÁS DE AURA",
-      title: "Created by YogaWithGem",
-      signature: "Created by YogaWithGem",
-      alt: "Retrato natural de la fundadora de Aura",
-      paragraphs: [
-        "Aura nació de un lugar que conozco bien: tener una vida que parecía llena por fuera, mientras por dentro me sentía desconectada.",
-        "Después de años moviéndome entre trabajo rápido, objetivos constantes y la presión de seguir, empecé a buscar una forma más suave de vivir - sin renunciar a la ambición, la curiosidad ni la independencia.",
-        "Aura es el espacio que yo quería encontrar: movimiento, rituales y conexión honesta para mujeres que están listas para bajar el ritmo y volver a sentirse presentes.",
-      ],
-      highlight: "Para la mujer que quiere una vida más suave, no una vida más pequeña.",
-    },
-    waitlist: {
-      eyebrow: "Únete al círculo",
-      title: "Tu reset empieza aquí.",
-      text:
-        "Únete al círculo de Aura para recibir acceso prioritario a próximas experiencias, rituales y actualizaciones cuidadas desde Las Palmas.",
-      label: "Correo electrónico",
-      placeholder: "tu@email.com",
-      button: "Unirme al círculo",
-      invalid: "Introduce un email válido.",
-      success: "Estás dentro. Nos vemos pronto ahí.",
-      microcopy: "Sin ruido. Solo actualizaciones cuidadas.",
-    },
-    footer: {
-      signature: "Created by YogaWithGem",
-      location: "Las Palmas de Gran Canaria",
-      instagram: "Instagram",
-      email: "Email",
-      waitlist: "Lista de espera",
-      mantra: "Mueve. Respira. Conecta. Reset.",
-    },
+  },
+  finalCta: {
+    title: "Tu primer reset empieza aquí.",
+    text:
+      "Únete a la lista para recibir acceso prioritario a la primera experiencia Aura en Las Palmas.",
+    label: "Email",
+    placeholder: "Tu email",
+    button: "Únete al primer reset",
+    invalid: "Introduce un email válido.",
+    success: "Ya estás dentro. Te escribiremos cuando Aura abra la primera experiencia.",
+  },
+  footer: {
+    tagline: "Reset rituals by the Atlantic.",
+    location: "Las Palmas de Gran Canaria",
+    links: ["Instagram", "Contacto", "Privacidad", "Aviso legal"],
+    note:
+      "Aura ofrece experiencias de bienestar y movimiento consciente. No sustituye atención médica o psicológica profesional.",
   },
 };
+
+export const translations = { es };

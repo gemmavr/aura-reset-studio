@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color: #302b27;
-  background: #f7f3ed;
+  color: #252525;
+  background: #f7f3eb;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,12 +13,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  background: #f7f3ed;
+  background: #f7f3eb;
   font-family: Inter, system-ui, sans-serif;
 }
 
@@ -32,6 +33,15 @@ img {
   animation-range: entry 8% cover 26%;
 }
 
+.atlantic-halo {
+  background:
+    radial-gradient(circle at 36% 34%, rgba(240, 180, 90, 0.92) 0 12%, rgba(233, 120, 91, 0.55) 28%, rgba(67, 142, 145, 0.36) 52%, transparent 72%);
+}
+
+.marquee-track {
+  animation: aura-marquee 32s linear infinite;
+}
+
 @keyframes soft-reveal {
   from {
     opacity: 0;
@@ -41,6 +51,16 @@ img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes aura-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }
 
@@ -58,5 +78,9 @@ img {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .marquee-track {
+    animation: none !important;
   }
 }
