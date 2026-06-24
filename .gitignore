@@ -1,6 +1,8 @@
 node_modules/
 dist/
 .next/
+out/
+.gh-pages-work/
 .env
 .env.local
 .DS_Store
