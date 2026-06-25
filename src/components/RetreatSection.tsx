@@ -26,7 +26,7 @@ export default function RetreatSection() {
               </ul>
               <div className="mt-8">
                 <CTAButton
-                  href="mailto:hola@auraresetstudio.com?subject=Inter%C3%A9s%20Retiro%20Aura%20septiembre"
+                  href="#reserva"
                   variant="light"
                   eventName="Apuntarme al interés"
                 >

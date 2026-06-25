@@ -49,7 +49,7 @@ export default function UpcomingExperience() {
             </div>
           </dl>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <CTAButton href="mailto:hola@auraresetstudio.com?subject=Reserva%20Pausa%20Aura" eventName="Reservar">
+            <CTAButton href="#reserva" eventName="Reservar">
               Quiero reservar
             </CTAButton>
             <CTAButton href="#faq" variant="secondary">

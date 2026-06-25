@@ -12,7 +12,7 @@ export default function Footer({ copy }) {
         <p className="max-w-md text-sm leading-7 text-aura-stone">{copy.note}</p>
         <div className="flex flex-col gap-3 text-sm text-aura-ink/68 lg:text-right">
           {copy.links.map((link) => (
-            <a key={link} href={link === "Contacto" ? "mailto:hello@auraresetstudio.com" : "#top"} className="transition hover:text-aura-teal">
+            <a key={link} href={link === "Contacto" ? "#reserva" : "#top"} className="transition hover:text-aura-teal">
               {link}
             </a>
           ))}

@@ -3,6 +3,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import ReservationForm from "@/components/ReservationForm";
 import RetreatSection from "@/components/RetreatSection";
 import UpcomingExperience from "@/components/UpcomingExperience";
 import { stockImages } from "@/lib/images";
@@ -112,6 +113,7 @@ export default function Home() {
         </section>
 
         <UpcomingExperience />
+        <ReservationForm />
 
         <section className="bg-aura-cal px-4 py-14 sm:px-6 lg:px-8 lg:py-24">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
