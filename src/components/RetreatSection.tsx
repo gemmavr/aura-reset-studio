@@ -28,6 +28,7 @@ export default function RetreatSection() {
                 <CTAButton
                   href="mailto:hola@auraresetstudio.com?subject=Inter%C3%A9s%20Retiro%20Aura%20septiembre"
                   variant="light"
+                  eventName="Apuntarme al interés"
                 >
                   Apuntarme al interés
                 </CTAButton>

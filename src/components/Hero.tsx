@@ -19,8 +19,8 @@ export default function Hero() {
             Tornar al cos. Tornar al ritme. Tornar a tu.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <CTAButton href="#proxima">Reservar próxima pausa</CTAButton>
-            <CTAButton href="#retiro" variant="secondary">
+            <CTAButton href="#proxima" eventName="Reservar">Reservar próxima pausa</CTAButton>
+            <CTAButton href="#retiro" variant="secondary" eventName="Apuntarme al interés">
               Interés retiro septiembre
             </CTAButton>
           </div>

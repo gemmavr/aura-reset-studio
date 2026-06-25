@@ -4,6 +4,7 @@ type CTAButtonProps = {
   href: string;
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "light";
+  eventName?: string;
   className?: string;
 };
 
@@ -20,12 +21,17 @@ export default function CTAButton({
   href,
   children,
   variant = "primary",
+  eventName,
   className = "",
 }: CTAButtonProps) {
+  const eventClass = eventName
+    ? `plausible-event-name=${eventName.replaceAll(" ", "+")}`
+    : "";
+
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 active:translate-y-0 ${variants[variant]} ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 active:translate-y-0 ${variants[variant]} ${eventClass} ${className}`}
     >
       {children}
     </Link>
