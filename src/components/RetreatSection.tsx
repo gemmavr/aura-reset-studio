@@ -3,9 +3,9 @@ import CTAButton from "./CTAButton";
 
 export default function RetreatSection() {
   return (
-    <section id="retiro" className="bg-aura-cal px-4 py-14 sm:px-6 lg:px-8 lg:py-24">
+    <section id="retiro" className="bg-aura-cal px-7 py-20 sm:px-12 lg:px-16 lg:py-32">
       <div className="mx-auto max-w-7xl">
-        <div className="grid overflow-hidden rounded-[1.35rem] bg-aura-deepAtlantic text-white shadow-image lg:grid-cols-[1fr_0.9fr]">
+        <div className="grid overflow-hidden bg-aura-deepAtlantic text-white shadow-image lg:grid-cols-[1fr_0.9fr]">
           <div className="relative p-6 sm:p-10 lg:p-14">
             <div className="absolute left-10 top-10 h-28 w-28 rounded-full bg-aura-olive/20 blur-3xl" />
             <div className="relative">
@@ -19,10 +19,10 @@ export default function RetreatSection() {
                 Estamos preparando el primer Retiro Aura: un encuentro íntimo entre cuerpo, descanso, palabra y territorio. Sin promesas grandilocuentes. Con tiempo, luz y cuidado.
               </p>
               <ul className="mt-8 grid gap-3 text-sm text-white/82 sm:grid-cols-2">
-                <li className="rounded-2xl bg-white/8 p-4">Grupo reducido y acompañamiento cercano</li>
-                <li className="rounded-2xl bg-white/8 p-4">Prácticas suaves, comida cuidada y pausa real</li>
-                <li className="rounded-2xl bg-white/8 p-4">Enraizado entre Barcelona y el Atlántico</li>
-                <li className="rounded-2xl bg-white/8 p-4">Lista prioritaria antes de abrir reservas</li>
+                <li className="border border-white/12 bg-white/8 p-4">Grupo reducido y acompañamiento cercano</li>
+                <li className="border border-white/12 bg-white/8 p-4">Prácticas suaves, comida cuidada y pausa real</li>
+                <li className="border border-white/12 bg-white/8 p-4">Enraizado entre Barcelona y el Atlántico</li>
+                <li className="border border-white/12 bg-white/8 p-4">Lista prioritaria antes de abrir reservas</li>
               </ul>
               <div className="mt-8">
                 <CTAButton

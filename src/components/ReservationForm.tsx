@@ -48,7 +48,7 @@ export default function ReservationForm() {
   }
 
   return (
-    <section id="reserva" className="bg-aura-softWhite px-4 py-14 sm:px-6 lg:px-8 lg:py-24">
+    <section id="reserva" className="bg-aura-softWhite px-7 py-20 sm:px-12 lg:px-16 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
         <div>
           <p className="text-xs font-semibold uppercase tracking-aura text-aura-olive">
@@ -71,7 +71,7 @@ export default function ReservationForm() {
           onSubmit={handleSubmit}
           aria-busy={status === "submitting"}
           aria-describedby="reserva-status"
-          className="rounded-[1.25rem] border border-aura-clay/35 bg-aura-cal p-5 shadow-soft sm:p-8"
+          className="border border-aura-clay/60 bg-aura-cal p-5 shadow-soft sm:p-8"
         >
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="text-sm font-semibold text-aura-deepAtlantic">
@@ -81,7 +81,7 @@ export default function ReservationForm() {
                 type="text"
                 name="nombre"
                 autoComplete="name"
-                className="mt-2 w-full rounded-2xl border border-aura-clay/45 bg-aura-softWhite px-4 py-3 text-base font-normal text-aura-ink outline-none transition focus:border-aura-atlantic focus:ring-4 focus:ring-aura-atlantic/10"
+                className="mt-2 w-full border border-aura-clay/60 bg-aura-softWhite px-4 py-3 text-base font-normal text-aura-ink outline-none transition focus:border-aura-olive focus:ring-4 focus:ring-aura-olive/10"
               />
             </label>
 
@@ -92,7 +92,7 @@ export default function ReservationForm() {
                 type="email"
                 name="email"
                 autoComplete="email"
-                className="mt-2 w-full rounded-2xl border border-aura-clay/45 bg-aura-softWhite px-4 py-3 text-base font-normal text-aura-ink outline-none transition focus:border-aura-atlantic focus:ring-4 focus:ring-aura-atlantic/10"
+                className="mt-2 w-full border border-aura-clay/60 bg-aura-softWhite px-4 py-3 text-base font-normal text-aura-ink outline-none transition focus:border-aura-olive focus:ring-4 focus:ring-aura-olive/10"
               />
             </label>
           </div>
@@ -103,7 +103,7 @@ export default function ReservationForm() {
               required
               name="experiencia"
               defaultValue=""
-              className="mt-2 w-full rounded-2xl border border-aura-clay/45 bg-aura-softWhite px-4 py-3 text-base font-normal text-aura-ink outline-none transition focus:border-aura-atlantic focus:ring-4 focus:ring-aura-atlantic/10"
+              className="mt-2 w-full border border-aura-clay/60 bg-aura-softWhite px-4 py-3 text-base font-normal text-aura-ink outline-none transition focus:border-aura-olive focus:ring-4 focus:ring-aura-olive/10"
             >
               <option value="" disabled>
                 Elige una opción
@@ -124,14 +124,14 @@ export default function ReservationForm() {
               {["Primera vez", "Repito"].map((option) => (
                 <label
                   key={option}
-                  className="flex items-center gap-3 rounded-2xl border border-aura-clay/45 bg-aura-softWhite px-4 py-3 text-sm text-aura-stone"
+                  className="flex items-center gap-3 border border-aura-clay/60 bg-aura-softWhite px-4 py-3 text-sm text-aura-stone"
                 >
                   <input
                     required
                     type="radio"
                     name="primera_vez_o_repite"
                     value={option}
-                    className="h-4 w-4 accent-aura-atlantic"
+                    className="h-4 w-4 accent-aura-olive"
                   />
                   {option}
                 </label>
@@ -142,20 +142,20 @@ export default function ReservationForm() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="mt-7 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-aura-atlantic px-5 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(47,111,134,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-aura-deepAtlantic hover:shadow-[0_18px_44px_rgba(23,62,64,0.2)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-aura-deepAtlantic disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
+            className="mt-7 inline-flex min-h-11 w-full items-center justify-center bg-aura-deepAtlantic px-6 py-3 text-sm font-medium text-aura-ivory shadow-[0_14px_34px_rgba(43,40,35,0.16)] transition duration-300 hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-aura-deepAtlantic disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
           >
             {status === "submitting" ? "Enviando..." : "Enviar reserva"}
           </button>
 
           <div id="reserva-status" aria-live="polite">
             {status === "success" && (
-              <p role="status" className="mt-5 rounded-2xl bg-aura-olive/12 p-4 text-sm leading-6 text-aura-deepAtlantic">
+              <p role="status" className="mt-5 border border-aura-olive/20 bg-aura-olive/12 p-4 text-sm leading-6 text-aura-deepAtlantic">
                 Hemos recibido tu señal. Te escribiremos con calma para contarte el siguiente paso.
               </p>
             )}
 
             {status === "error" && (
-              <p role="alert" className="mt-5 rounded-2xl bg-aura-coral/10 p-4 text-sm leading-6 text-aura-deepAtlantic">
+              <p role="alert" className="mt-5 border border-aura-coral/20 bg-aura-coral/10 p-4 text-sm leading-6 text-aura-deepAtlantic">
                 Ahora mismo el formulario necesita terminar de conectarse. Revisa el endpoint de Formspree y vuelve a intentarlo.
               </p>
             )}

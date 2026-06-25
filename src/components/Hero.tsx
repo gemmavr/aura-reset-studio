@@ -3,55 +3,42 @@ import CTAButton from "./CTAButton";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="aura-grain overflow-hidden">
-      <div className="mx-auto grid min-h-[calc(100svh-4.5rem)] max-w-7xl items-center gap-10 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-[0.82fr_1.18fr] lg:px-8 lg:py-20">
-        <div className="section-rise relative z-10 max-w-2xl">
-          <p className="mb-5 text-xs font-semibold uppercase tracking-aura text-aura-olive">
-            Barcelona · Las Palmas · Experiencias presenciales
+    <section id="inicio" className="aura-grain overflow-hidden border-b border-aura-clay">
+      <div className="grid min-h-[86svh] lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="section-rise flex flex-col justify-center px-7 py-20 sm:px-12 lg:px-16 xl:px-24">
+          <p className="mb-7 text-[0.78rem] font-medium uppercase tracking-[0.12em] text-aura-stone before:mr-2 before:text-aura-olive before:content-['—']">
+            Barcelona · Las Palmas
           </p>
-          <h1 className="text-balance font-serif text-[3.25rem] leading-[0.9] text-aura-deepAtlantic sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-[11ch] font-serif text-[3.1rem] font-light leading-[1.02] tracking-[-0.01em] text-aura-deepAtlantic sm:text-6xl lg:text-[4.4rem]">
             Baja el ruido. Vuelve al cuerpo.
           </h1>
-          <p className="mt-6 max-w-xl text-[1.05rem] leading-8 text-aura-stone sm:text-lg">
-            AURA Reset Studio crea pausas, talleres y encuentros para volver al ritmo propio sin salir de la vida real.
+          <p className="mt-9 max-w-[38ch] text-[1.04rem] leading-8 text-aura-stone">
+            Pausas, talleres y encuentros para volver al ritmo propio sin salir de la vida real.
           </p>
-          <p className="mt-5 max-w-xl text-base italic text-aura-atlantic">
-            Tornar al cos. Tornar al ritme. Tornar a tu.
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <CTAButton href="#proxima" eventName="Reservar">Reservar próxima pausa</CTAButton>
+          <div className="mt-12 flex flex-col gap-5 sm:flex-row sm:items-center">
+            <CTAButton href="#proxima" eventName="Reservar">
+              Reservar próxima pausa
+            </CTAButton>
             <CTAButton href="#retiro" variant="secondary" eventName="Apuntarme al interés">
               Interés retiro septiembre
             </CTAButton>
           </div>
         </div>
 
-        <div className="section-rise relative min-h-[25rem] sm:min-h-[34rem] lg:min-h-[42rem]">
-          <div className="absolute -right-12 top-0 h-40 w-40 rounded-full bg-aura-olive/15 blur-3xl" />
+        <div className="section-rise relative min-h-[52svh] bg-aura-sand lg:min-h-full lg:-mr-12">
           <img
             src={stockImages.hero}
             alt="Mar atlántico luminoso como paisaje principal de AURA"
             loading="eager"
             decoding="async"
-            className="editorial-image absolute left-0 top-0 h-[78%] w-[74%] rounded-[1.35rem] object-cover shadow-image sm:rounded-[1.75rem]"
+            className="h-full w-full object-cover"
           />
-          <img
-            src={stockImages.journal}
-            alt="Cuaderno abierto para escritura consciente"
-            loading="lazy"
-            decoding="async"
-            className="editorial-image absolute bottom-0 right-0 h-[48%] w-[48%] rounded-[1.15rem] object-cover shadow-soft ring-8 ring-aura-cal sm:ring-[14px]"
-          />
-          <div className="absolute bottom-[16%] left-[8%] max-w-[17rem] rounded-2xl bg-aura-softWhite/90 p-4 shadow-soft backdrop-blur">
-            <p className="text-sm font-semibold text-aura-deepAtlantic">
-              Próxima experiencia
-            </p>
-            <p className="mt-1 text-sm leading-5 text-aura-stone">
-              Pausa Aura: Volver al cuerpo · plazas limitadas
-            </p>
-          </div>
-          <div className="absolute right-[8%] top-[8%] hidden max-w-[9rem] rounded-full bg-aura-arena/75 px-4 py-3 text-center text-xs font-semibold uppercase tracking-aura text-aura-deepAtlantic shadow-soft sm:block">
-            Luz local
+          <div className="absolute inset-6 border border-aura-ivory/45" />
+          <div className="absolute bottom-8 left-6 max-w-[15rem] border border-aura-clay bg-aura-ivory p-5 text-sm leading-6 text-aura-stone shadow-soft sm:left-[-4rem] sm:bottom-14">
+            <strong className="mb-1 block font-serif text-base font-normal text-aura-deepAtlantic">
+              Pausa Aura
+            </strong>
+            Volver al cuerpo · plazas limitadas
           </div>
         </div>
       </div>

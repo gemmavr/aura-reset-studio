@@ -2,7 +2,7 @@ import CTAButton from "./CTAButton";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-aura-clay/40 bg-aura-cal px-4 py-10 sm:px-6 lg:px-8">
+    <footer className="border-t border-aura-clay bg-aura-cal px-7 py-10 sm:px-12 lg:px-16">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-base font-semibold tracking-[0.22em] text-aura-deepAtlantic">

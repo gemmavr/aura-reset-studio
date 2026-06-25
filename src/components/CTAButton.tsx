@@ -10,11 +10,11 @@ type CTAButtonProps = {
 
 const variants = {
   primary:
-    "bg-aura-atlantic text-white shadow-[0_14px_34px_rgba(47,111,134,0.18)] hover:-translate-y-0.5 hover:bg-aura-deepAtlantic hover:shadow-[0_18px_44px_rgba(23,62,64,0.2)] focus-visible:outline-aura-deepAtlantic",
+    "bg-aura-deepAtlantic text-aura-ivory shadow-[0_14px_34px_rgba(43,40,35,0.16)] hover:bg-aura-ink hover:opacity-90 focus-visible:outline-aura-deepAtlantic",
   secondary:
-    "border border-aura-atlantic/35 bg-aura-softWhite text-aura-deepAtlantic hover:-translate-y-0.5 hover:border-aura-deepAtlantic hover:bg-white hover:shadow-[0_14px_34px_rgba(47,111,134,0.1)] focus-visible:outline-aura-atlantic",
+    "border-b border-aura-olive bg-transparent px-0 text-aura-deepAtlantic hover:text-aura-olive focus-visible:outline-aura-atlantic",
   light:
-    "bg-aura-softWhite text-aura-deepAtlantic hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_18px_44px_rgba(255,255,255,0.16)] focus-visible:outline-aura-softWhite",
+    "bg-aura-ivory text-aura-deepAtlantic hover:bg-aura-softWhite hover:opacity-90 focus-visible:outline-aura-softWhite",
 };
 
 export default function CTAButton({
@@ -31,7 +31,7 @@ export default function CTAButton({
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 active:translate-y-0 ${variants[variant]} ${eventClass} ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center px-6 py-3 text-sm font-medium transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 active:translate-y-0 ${variants[variant]} ${eventClass} ${className}`}
     >
       {children}
     </Link>

@@ -1,10 +1,11 @@
-import ExperienceCard from "@/components/ExperienceCard";
+import ExperienceFormats from "@/components/ExperienceFormats";
 import FAQAccordion from "@/components/FAQAccordion";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ReservationForm from "@/components/ReservationForm";
 import RetreatSection from "@/components/RetreatSection";
+import SignatureMoment from "@/components/SignatureMoment";
 import UpcomingExperience from "@/components/UpcomingExperience";
 import { stockImages } from "@/lib/images";
 
@@ -57,8 +58,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <SignatureMoment />
 
-        <section className="bg-aura-softWhite px-4 py-14 sm:px-6 lg:px-8 lg:py-24">
+        <section className="bg-aura-softWhite px-7 py-20 sm:px-12 lg:px-16 lg:py-32">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
             <div className="relative order-2 min-h-[26rem] lg:order-1">
               <img
@@ -80,7 +82,7 @@ export default function Home() {
               <p className="text-xs font-semibold uppercase tracking-aura text-aura-olive">
                 Manifiesto
               </p>
-              <h2 className="mt-4 max-w-3xl text-balance font-serif text-4xl leading-tight text-aura-deepAtlantic sm:text-5xl">
+              <h2 className="mt-4 max-w-3xl text-balance font-serif text-4xl font-light leading-tight text-aura-deepAtlantic sm:text-5xl">
                 No venimos a optimizarte. Venimos a recordarte que ya tienes cuerpo, ritmo y casa dentro.
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-aura-stone">
@@ -90,42 +92,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="experiencias"
-          className="bg-aura-cal px-4 py-14 sm:px-6 lg:px-8 lg:py-24"
-        >
-          <div className="mx-auto max-w-7xl">
-            <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-aura text-aura-olive">
-                  Experiencias
-                </p>
-                <h2 className="mt-4 text-balance font-serif text-4xl text-aura-deepAtlantic sm:text-5xl">
-                  Formatos para volver sin desaparecer.
-                </h2>
-              </div>
-              <p className="max-w-xl text-base leading-7 text-aura-stone lg:justify-self-end">
-                Cada formato mezcla cuerpo, palabra, mesa y territorio de manera distinta. Nada de fórmulas importadas: presencia local, diseño cuidado y grupos pequeños.
-              </p>
-            </div>
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:[&>*:nth-child(even)]:mt-10">
-              {experiences.map((experience) => (
-                <ExperienceCard key={experience.title} {...experience} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <ExperienceFormats experiences={experiences} />
 
         <UpcomingExperience />
         <ReservationForm />
 
-        <section className="bg-aura-cal px-4 py-14 sm:px-6 lg:px-8 lg:py-24">
+        <section className="bg-aura-cal px-7 py-20 sm:px-12 lg:px-16 lg:py-32">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-            <div className="rounded-[1.25rem] bg-aura-olive/10 p-6 sm:p-10 lg:p-12">
+            <div className="border border-aura-clay bg-aura-olive/10 p-6 sm:p-10 lg:p-12">
               <p className="text-xs font-semibold uppercase tracking-aura text-aura-olive">
                 Ven como estés
               </p>
-              <h2 className="mt-4 text-balance font-serif text-4xl leading-tight text-aura-deepAtlantic sm:text-5xl">
+              <h2 className="mt-4 text-balance font-serif text-4xl font-light leading-tight text-aura-deepAtlantic sm:text-5xl">
                 Sin tener que llegar tranquila, flexible o perfectamente disponible.
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-aura-stone">
