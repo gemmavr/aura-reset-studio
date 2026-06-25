@@ -64,11 +64,15 @@ export default function Home() {
               <img
                 src={stockImages.manifesto}
                 alt="Mesa luminosa con ordenador y libreta, una escena cotidiana y cuidada"
+                loading="lazy"
+                decoding="async"
                 className="editorial-image absolute left-0 top-0 h-[72%] w-[78%] rounded-[1.25rem] object-cover shadow-image"
               />
               <img
                 src={stockImages.table}
                 alt="Comida saludable en una mesa de madera compartida"
+                loading="lazy"
+                decoding="async"
                 className="editorial-image absolute bottom-0 right-0 h-[46%] w-[54%] rounded-[1.1rem] object-cover shadow-soft ring-8 ring-aura-softWhite"
               />
             </div>
@@ -132,11 +136,15 @@ export default function Home() {
               <img
                 src={stockImages.comeAsYouAre}
                 alt="Detalle de piel, lino y calma cotidiana"
+                loading="lazy"
+                decoding="async"
                 className="editorial-image absolute right-0 top-0 h-[78%] w-[76%] rounded-[1.25rem] object-cover shadow-image"
               />
               <img
                 src={stockImages.journal}
                 alt="Escritura en cuaderno durante una pausa"
+                loading="lazy"
+                decoding="async"
                 className="editorial-image absolute bottom-0 left-0 h-[44%] w-[50%] rounded-[1rem] object-cover shadow-soft ring-8 ring-aura-cal"
               />
             </div>

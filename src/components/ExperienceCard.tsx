@@ -31,6 +31,8 @@ export default function ExperienceCard({
         <img
           src={image}
           alt={alt}
+          loading="lazy"
+          decoding="async"
           className="aspect-[5/4] w-full object-cover transition duration-700 group-hover:scale-[1.045] group-hover:saturate-[1.04]"
         />
       </div>

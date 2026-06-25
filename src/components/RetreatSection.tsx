@@ -38,6 +38,8 @@ export default function RetreatSection() {
           <img
             src={stockImages.september}
             alt="Costa atlántica luminosa para el retiro de septiembre"
+            loading="lazy"
+            decoding="async"
             className="h-full min-h-[22rem] w-full object-cover lg:min-h-[34rem]"
           />
         </div>

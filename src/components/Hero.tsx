@@ -31,11 +31,15 @@ export default function Hero() {
           <img
             src={stockImages.hero}
             alt="Mar atlántico luminoso como paisaje principal de AURA"
+            loading="eager"
+            decoding="async"
             className="editorial-image absolute left-0 top-0 h-[78%] w-[74%] rounded-[1.35rem] object-cover shadow-image sm:rounded-[1.75rem]"
           />
           <img
             src={stockImages.journal}
             alt="Cuaderno abierto para escritura consciente"
+            loading="lazy"
+            decoding="async"
             className="editorial-image absolute bottom-0 right-0 h-[48%] w-[48%] rounded-[1.15rem] object-cover shadow-soft ring-8 ring-aura-cal sm:ring-[14px]"
           />
           <div className="absolute bottom-[16%] left-[8%] max-w-[17rem] rounded-2xl bg-aura-softWhite/90 p-4 shadow-soft backdrop-blur">

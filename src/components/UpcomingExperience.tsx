@@ -12,6 +12,8 @@ export default function UpcomingExperience() {
           <img
             src={stockImages.upcoming}
             alt="Grupo pequeño compartiendo una experiencia al aire libre"
+            loading="lazy"
+            decoding="async"
             className="editorial-image h-full w-full object-cover"
           />
           <div className="absolute inset-x-4 bottom-4 rounded-2xl bg-aura-softWhite/88 p-4 backdrop-blur sm:hidden">
