@@ -15,6 +15,7 @@ const experiences = [
     image: stockImages.pauses,
     alt: "Paisaje de costa y luz natural para una pausa Aura",
     meta: "2 horas · grupo reducido",
+    price: "[PRECIO_PAUSA]",
     tone: "atlantic" as const,
   },
   {
@@ -24,6 +25,7 @@ const experiences = [
     image: stockImages.workshops,
     alt: "Cuaderno y escritura en una mesa luminosa",
     meta: "Profundidad sin exigencia",
+    price: "[PRECIO_TALLERES]",
     tone: "sand" as const,
   },
   {
@@ -33,6 +35,7 @@ const experiences = [
     image: stockImages.gatherings,
     alt: "Grupo pequeño compartiendo una mesa al aire libre",
     meta: "Comunidad local",
+    price: "[PRECIO_ENCUENTROS]",
     tone: "olive" as const,
   },
   {
@@ -42,6 +45,7 @@ const experiences = [
     image: stockImages.retreat,
     alt: "Mar atlántico luminoso para el Retiro Aura",
     meta: "Septiembre · interés abierto",
+    price: "[PRECIO_RETIRO]",
     tone: "atlantic" as const,
   },
 ];

@@ -4,6 +4,7 @@ type ExperienceCardProps = {
   image: string;
   alt: string;
   meta: string;
+  price: string;
   tone?: "sand" | "olive" | "atlantic";
 };
 
@@ -19,6 +20,7 @@ export default function ExperienceCard({
   image,
   alt,
   meta,
+  price,
   tone = "sand",
 }: ExperienceCardProps) {
   return (
@@ -40,6 +42,9 @@ export default function ExperienceCard({
           {title}
         </h3>
         <p className="mt-3 text-sm leading-6 text-aura-stone">{description}</p>
+        <p className="mt-5 inline-flex rounded-full border border-aura-atlantic/20 bg-aura-softWhite/72 px-3 py-1.5 text-sm font-semibold text-aura-deepAtlantic">
+          {price}
+        </p>
       </div>
     </article>
   );
