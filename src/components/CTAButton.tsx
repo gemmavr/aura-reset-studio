@@ -10,11 +10,11 @@ type CTAButtonProps = {
 
 const variants = {
   primary:
-    "bg-aura-cta text-aura-ctaText hover:opacity-85 focus-visible:outline-aura-deepAtlantic",
+    "bg-aura-deepAtlantic text-aura-ivory shadow-[0_14px_34px_rgba(43,40,35,0.16)] hover:bg-aura-ink hover:opacity-90 focus-visible:outline-aura-deepAtlantic",
   secondary:
     "border-b border-aura-olive bg-transparent px-0 text-aura-deepAtlantic hover:text-aura-olive focus-visible:outline-aura-atlantic",
   light:
-    "bg-aura-ctaText text-aura-deepAtlantic hover:opacity-85 focus-visible:outline-aura-softWhite",
+    "bg-aura-ivory text-aura-deepAtlantic hover:bg-aura-softWhite hover:opacity-90 focus-visible:outline-aura-softWhite",
 };
 
 export default function CTAButton({
