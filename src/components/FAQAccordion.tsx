@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 const questions = [
   {
     question: "¿Necesito experiencia previa?",
@@ -26,8 +22,6 @@ const questions = [
 ];
 
 export default function FAQAccordion() {
-  const [openIndex, setOpenIndex] = useState(0);
-
   return (
     <section
       id="faq"
@@ -43,38 +37,26 @@ export default function FAQAccordion() {
           </h2>
         </div>
         <div className="divide-y divide-aura-clay/45 border-y border-aura-clay/45">
-          {questions.map((item, index) => {
-            const isOpen = openIndex === index;
-            const panelId = `faq-panel-${index}`;
-            const buttonId = `faq-button-${index}`;
-
-            return (
-              <div key={item.question} className="transition hover:bg-aura-arena/10">
-                <button
-                  id={buttonId}
-                  type="button"
-                  aria-expanded={isOpen}
-                  aria-controls={panelId}
-                  onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                  className="flex w-full items-center justify-between gap-4 py-5 text-left text-lg font-semibold text-aura-deepAtlantic focus-visible:outline focus-visible:outline-2 focus-visible:outline-aura-atlantic"
-                >
-                  <span>{item.question}</span>
-                  <span aria-hidden="true" className="text-2xl font-light">
-                    {isOpen ? "-" : "+"}
-                  </span>
-                </button>
-                <div
-                  id={panelId}
-                  role="region"
-                  aria-labelledby={buttonId}
-                  hidden={!isOpen}
-                  className="pb-5 text-base leading-7 text-aura-stone"
-                >
-                  {item.answer}
-                </div>
-              </div>
-            );
-          })}
+          {questions.map((item, index) => (
+            <details
+              key={item.question}
+              open={index === 0}
+              className="group transition hover:bg-aura-arena/10"
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left text-lg font-semibold text-aura-deepAtlantic focus-visible:outline focus-visible:outline-2 focus-visible:outline-aura-atlantic [&::-webkit-details-marker]:hidden">
+                <span>{item.question}</span>
+                <span aria-hidden="true" className="text-2xl font-light group-open:hidden">
+                  +
+                </span>
+                <span aria-hidden="true" className="hidden text-2xl font-light group-open:inline">
+                  -
+                </span>
+              </summary>
+              <p className="pb-5 text-base leading-7 text-aura-stone">
+                {item.answer}
+              </p>
+            </details>
+          ))}
         </div>
       </div>
     </section>
