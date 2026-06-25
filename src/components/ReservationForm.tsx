@@ -69,6 +69,8 @@ export default function ReservationForm() {
 
         <form
           onSubmit={handleSubmit}
+          aria-busy={status === "submitting"}
+          aria-describedby="reserva-status"
           className="rounded-[1.25rem] border border-aura-clay/35 bg-aura-cal p-5 shadow-soft sm:p-8"
         >
           <div className="grid gap-5 sm:grid-cols-2">
@@ -145,17 +147,19 @@ export default function ReservationForm() {
             {status === "submitting" ? "Enviando..." : "Enviar reserva"}
           </button>
 
-          {status === "success" && (
-            <p role="status" className="mt-5 rounded-2xl bg-aura-olive/12 p-4 text-sm leading-6 text-aura-deepAtlantic">
-              Hemos recibido tu señal. Te escribiremos con calma para contarte el siguiente paso.
-            </p>
-          )}
+          <div id="reserva-status" aria-live="polite">
+            {status === "success" && (
+              <p role="status" className="mt-5 rounded-2xl bg-aura-olive/12 p-4 text-sm leading-6 text-aura-deepAtlantic">
+                Hemos recibido tu señal. Te escribiremos con calma para contarte el siguiente paso.
+              </p>
+            )}
 
-          {status === "error" && (
-            <p role="alert" className="mt-5 rounded-2xl bg-aura-coral/10 p-4 text-sm leading-6 text-aura-deepAtlantic">
-              Ahora mismo el formulario necesita terminar de conectarse. Revisa el endpoint de Formspree y vuelve a intentarlo.
-            </p>
-          )}
+            {status === "error" && (
+              <p role="alert" className="mt-5 rounded-2xl bg-aura-coral/10 p-4 text-sm leading-6 text-aura-deepAtlantic">
+                Ahora mismo el formulario necesita terminar de conectarse. Revisa el endpoint de Formspree y vuelve a intentarlo.
+              </p>
+            )}
+          </div>
         </form>
       </div>
     </section>
