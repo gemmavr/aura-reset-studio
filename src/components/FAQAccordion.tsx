@@ -25,7 +25,7 @@ export default function FAQAccordion() {
   return (
     <section
       id="faq"
-      className="bg-aura-softWhite px-4 py-14 sm:px-6 lg:px-8 lg:py-24"
+      className="bg-aura-softWhite px-7 py-20 sm:px-12 lg:px-16 lg:py-32"
     >
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.78fr_1.22fr]">
         <div>
@@ -38,11 +38,7 @@ export default function FAQAccordion() {
         </div>
         <div className="divide-y divide-aura-clay/45 border-y border-aura-clay/45">
           {questions.map((item, index) => (
-            <details
-              key={item.question}
-              open={index === 0}
-              className="group transition hover:bg-aura-arena/10"
-            >
+            <details key={item.question} open={index === 0} className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left text-lg font-semibold text-aura-deepAtlantic focus-visible:outline focus-visible:outline-2 focus-visible:outline-aura-atlantic [&::-webkit-details-marker]:hidden">
                 <span>{item.question}</span>
                 <span aria-hidden="true" className="text-2xl font-light group-open:hidden">

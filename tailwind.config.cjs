@@ -34,8 +34,8 @@ module.exports = {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 18px 60px rgba(43, 40, 35, 0.08)",
-        image: "0 28px 80px rgba(43, 40, 35, 0.14)",
+        soft: "none",
+        image: "none",
       },
       letterSpacing: {
         aura: "0.08em",
