@@ -8,7 +8,7 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-aura-clay bg-aura-ivory/95">
+    <header className="sticky top-0 z-40 border-b border-aura-clay bg-aura-ivory/82 backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1380px] items-center justify-between gap-4 px-6 py-5 sm:px-8 lg:px-12">
         <a
           href="#inicio"
@@ -33,7 +33,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <CTAButton href="#proxima" className="hidden border border-aura-deepAtlantic bg-transparent text-aura-deepAtlantic hover:bg-aura-deepAtlantic hover:text-aura-ivory sm:inline-flex">
+        <CTAButton href="#proxima" className="hidden border border-aura-deepAtlantic bg-transparent text-aura-deepAtlantic shadow-none hover:bg-aura-deepAtlantic hover:text-aura-ivory sm:inline-flex">
           Reservar
         </CTAButton>
         <a

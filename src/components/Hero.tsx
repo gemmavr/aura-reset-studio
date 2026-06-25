@@ -33,7 +33,8 @@ export default function Hero() {
             decoding="async"
             className="h-full w-full object-cover"
           />
-          <div className="absolute bottom-8 left-6 max-w-[15rem] border border-aura-clay bg-aura-ivory p-5 text-sm leading-6 text-aura-stone sm:left-[-4rem] sm:bottom-14">
+          <div className="absolute inset-6 border border-aura-ivory/45" />
+          <div className="absolute bottom-8 left-6 max-w-[15rem] border border-aura-clay bg-aura-ivory p-5 text-sm leading-6 text-aura-stone shadow-soft sm:left-[-4rem] sm:bottom-14">
             <strong className="mb-1 block font-serif text-base font-normal text-aura-deepAtlantic">
               Pausa Aura
             </strong>

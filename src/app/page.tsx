@@ -61,21 +61,21 @@ export default function Home() {
         <SignatureMoment />
 
         <section className="bg-aura-softWhite px-7 py-20 sm:px-12 lg:px-16 lg:py-32">
-          <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:gap-24">
+          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
             <div className="relative order-2 min-h-[26rem] lg:order-1">
               <img
                 src={stockImages.manifesto}
                 alt="Mesa luminosa con ordenador y libreta, una escena cotidiana y cuidada"
                 loading="lazy"
                 decoding="async"
-                className="editorial-image absolute left-0 top-0 h-[72%] w-[78%] object-cover"
+                className="editorial-image absolute left-0 top-0 h-[72%] w-[78%] rounded-[1.25rem] object-cover shadow-image"
               />
               <img
                 src={stockImages.table}
                 alt="Comida saludable en una mesa de madera compartida"
                 loading="lazy"
                 decoding="async"
-                className="editorial-image absolute bottom-0 right-0 h-[46%] w-[54%] object-cover"
+                className="editorial-image absolute bottom-0 right-0 h-[46%] w-[54%] rounded-[1.1rem] object-cover shadow-soft ring-8 ring-aura-softWhite"
               />
             </div>
             <div className="order-1 lg:order-2">
@@ -98,8 +98,8 @@ export default function Home() {
         <ReservationForm />
 
         <section className="bg-aura-cal px-7 py-20 sm:px-12 lg:px-16 lg:py-32">
-          <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-24">
-            <div className="border-t border-aura-clay pt-8">
+          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div className="border border-aura-clay bg-aura-olive/10 p-6 sm:p-10 lg:p-12">
               <p className="text-xs font-semibold uppercase tracking-aura text-aura-olive">
                 Ven como estés
               </p>
@@ -116,14 +116,14 @@ export default function Home() {
                 alt="Detalle de piel, lino y calma cotidiana"
                 loading="lazy"
                 decoding="async"
-                className="editorial-image absolute right-0 top-0 h-[78%] w-[76%] object-cover"
+                className="editorial-image absolute right-0 top-0 h-[78%] w-[76%] rounded-[1.25rem] object-cover shadow-image"
               />
               <img
                 src={stockImages.journal}
                 alt="Escritura en cuaderno durante una pausa"
                 loading="lazy"
                 decoding="async"
-                className="editorial-image absolute bottom-0 left-0 h-[44%] w-[50%] object-cover"
+                className="editorial-image absolute bottom-0 left-0 h-[44%] w-[50%] rounded-[1rem] object-cover shadow-soft ring-8 ring-aura-cal"
               />
             </div>
           </div>

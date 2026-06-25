@@ -31,7 +31,7 @@ export default function CTAButton({
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center px-6 py-3 text-sm font-medium transition-opacity duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${variants[variant]} ${eventClass} ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center px-6 py-3 text-sm font-medium transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 active:translate-y-0 ${variants[variant]} ${eventClass} ${className}`}
     >
       {children}
     </Link>
