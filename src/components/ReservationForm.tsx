@@ -142,7 +142,7 @@ export default function ReservationForm() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="mt-7 inline-flex min-h-11 w-full items-center justify-center bg-aura-deepAtlantic px-6 py-3 text-sm font-medium text-aura-ivory shadow-[0_14px_34px_rgba(43,40,35,0.16)] transition duration-300 hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-aura-deepAtlantic disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
+            className="mt-7 inline-flex min-h-11 w-full items-center justify-center bg-aura-cta px-6 py-3 text-sm font-medium text-aura-ctaText transition duration-300 hover:opacity-85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-aura-deepAtlantic disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
           >
             {status === "submitting" ? "Enviando..." : "Enviar reserva"}
           </button>
