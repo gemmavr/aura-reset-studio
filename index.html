@@ -1,28 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Movimiento suave, respiración, journaling y experiencias de reset junto al Atlántico. Únete a la primera experiencia Aura en Las Palmas de Gran Canaria."
-    />
-    <meta property="og:title" content="Aura Reset Studio | Reset rituals en Las Palmas" />
-    <meta
-      property="og:description"
-      content="Movimiento suave, respiración, journaling y experiencias de reset junto al Atlántico. Únete a la primera experiencia Aura en Las Palmas de Gran Canaria."
-    />
-    <meta property="og:type" content="website" />
-    <title>Aura Reset Studio | Reset rituals en Las Palmas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AURA | Yoga somático en Barcelona y Las Palmas</title>
+<meta name="description" content="Prácticas breves de yoga somático para volver a ti, y encuentros pequeños y cuidados. AURA se mueve entre Barcelona y Las Palmas de Gran Canaria.">
+<link rel="canonical" href="https://aurareset.es/">
+<meta name="theme-color" content="#F1EADC">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AURA">
+<meta property="og:title" content="AURA | Yoga somático en Barcelona y Las Palmas">
+<meta property="og:description" content="Prácticas breves de yoga somático para volver a ti, y encuentros pequeños y cuidados. AURA se mueve entre Barcelona y Las Palmas de Gran Canaria.">
+<meta property="og:url" content="https://aurareset.es/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://aurareset.es/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23231B14'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23C4A15A' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preload" href="/assets/fonts/CormorantGaramond-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Jost-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/aura.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "AURA", "alternateName": "AURA yoga somático", "url": "https://aurareset.es/", "logo": "https://aurareset.es/og.png", "description": "Prácticas breves de yoga somático para volver a ti, y encuentros pequeños y cuidados. AURA se mueve entre Barcelona y Las Palmas de Gran Canaria.", "sameAs": ["https://www.instagram.com/aurayogareset"], "areaServed": [{"@type": "City", "name": "Barcelona"}, {"@type": "City", "name": "Las Palmas de Gran Canaria"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es el yoga somático?", "acceptedAnswer": {"@type": "Answer", "text": "Una forma de practicar yoga que presta atención a cómo se siente el cuerpo por dentro. Se hace con movimientos lentos y respiración suave, y no busca la postura perfecta."}}, {"@type": "Question", "name": "¿Necesito experiencia previa?", "acceptedAnswer": {"@type": "Answer", "text": "No. Las prácticas son breves y están pensadas para encajar en un día normal."}}, {"@type": "Question", "name": "¿Cuánto duran las prácticas?", "acceptedAnswer": {"@type": "Answer", "text": "Entre 5 y 10 minutos. Morning dura 5 o 10, After Work 5, Too Much 7 y Night 5 o 10."}}, {"@type": "Question", "name": "¿Dónde se practica?", "acceptedAnswer": {"@type": "Answer", "text": "AURA se mueve entre Barcelona y Las Palmas de Gran Canaria. El primer encuentro será en Barcelona, con plazas muy limitadas."}}, {"@type": "Question", "name": "¿Sustituye a la terapia o a la atención médica?", "acceptedAnswer": {"@type": "Answer", "text": "No. AURA es yoga somático y no sustituye la atención médica ni psicológica."}}, {"@type": "Question", "name": "¿Cómo me entero del primer encuentro?", "acceptedAnswer": {"@type": "Answer", "text": "Deja tu email en esta página o escríbenos “encuentro” por Instagram, y te avisamos primero."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top" data-tone="light"><div class="in">
+<a class="brand" href="/" aria-label="AURA, inicio">AURA</a>
+<nav aria-label="Principal"><a href="/#un-dia">Un día contigo</a><a href="/#encuentros">Encuentros</a><a href="/barcelona/">Barcelona</a><a href="/las-palmas/">Las Palmas</a></nav>
+<button class="mode" id="modeBtn" type="button" aria-pressed="false">Modo noche</button>
+</div></header>
+<div class="ritual" id="ritual" role="dialog" aria-modal="true" aria-label="Pausa guiada de 3 minutos">
+<div class="r-top"><button type="button" id="rMute" hidden aria-pressed="false">Silenciar</button><button type="button" id="rExit">Salir</button></div>
+<div class="r-stage"><div class="orb" aria-hidden="true"></div><p class="r-text" id="rText" aria-live="polite"></p></div>
+<div class="r-end">
+<h2>¿Te avisamos del primer encuentro?</h2>
+<p>Reuniones pequeñas y cuidadas al detalle. El primero será en Barcelona, con plazas muy limitadas.</p>
+<form class="form aura-form">
+<label class="t" for="em-pausa">Tu email</label>
+<div class="row"><input id="em-pausa" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="espaciocreativoaura@gmail.com"><button class="btn" type="submit">Avísame</button></div>
+<input type="hidden" name="ciudad" value=""><input type="hidden" name="origen" value="pausa">
+<div class="hp" aria-hidden="true"><label>No rellenes esto <input name="empresa" tabindex="-1" autocomplete="off"></label></div>
+<label class="consent"><input type="checkbox" name="consentimiento" value="si" required><span>Acepto que AURA use mi email para avisarme de encuentros y novedades. Puedo darme de baja cuando quiera.</span></label>
+<p class="status" role="status" aria-live="polite"></p>
+</form>
+<button class="btn ghost r-back" id="rBack" type="button">Volver a la web</button>
+</div>
+</div>
+<main id="contenido">
+
+<section class="scene s-hero hero" data-tone="light"><div class="wrap">
+<div class="mark"><h1>AURA</h1></div>
+<p class="tagline">Vuelve a ti.</p>
+<p class="sub">Yoga somático, sin prisa. Prácticas breves para bajar el ritmo y encuentros pequeños y cuidados, entre Barcelona y Las Palmas.</p>
+<button class="btn" type="button" data-open-ritual>Respira 3 minutos con AURA</button>
+<span class="hint">Un toque. Dura 3 minutos y sigue sola.</span>
+<a class="more" href="#un-dia">Ver un día con AURA</a>
+</div></section>
+
+<section class="scene s-morning" id="un-dia" data-tone="light"><div class="wrap">
+<h2 class="sec">Un día contigo</h2>
+<div class="cols">
+<div><p class="when">por la mañana</p><h3 class="name">Morning</h3>
+<p class="desc">Despiertas el cuerpo con suavidad, eliges una intención y te dices algo amable antes de salir.</p>
+<span class="time">5 o 10 minutos</span></div>
+<div class="halo m" aria-hidden="true"><i></i></div>
+</div></div></section>
+
+<section class="scene s-after" data-tone="light"><div class="wrap">
+<div class="cols flip">
+<div><p class="when">al salir del trabajo</p><h3 class="name">After Work</h3>
+<p class="desc">Cierras la jornada y la dejas fuera. Recuperas las manos, la respiración y tu espacio.</p>
+<span class="time">5 minutos</span></div>
+<div class="halo a" aria-hidden="true"><i></i></div>
+</div></div></section>
+
+<section class="scene s-much" data-tone="dark"><div class="wrap">
+<div class="cols">
+<div><p class="when">cuando todo pesa</p><h3 class="name">Too Much</h3>
+<p class="desc">Bajas el ritmo hasta que la cabeza se queda en silencio y el cuerpo vuelve a ser tuyo.</p>
+<span class="time">7 minutos</span></div>
+<div class="halo t" aria-hidden="true"><i></i></div>
+</div></div></section>
+
+<section class="scene s-night" data-tone="dark"><div class="wrap">
+<div class="cols flip">
+<div><p class="when">antes de dormir</p><h3 class="name">Night</h3>
+<p class="desc">Sueltas lo que quedó del día para que el cuerpo pueda descansar de verdad.</p>
+<span class="time">5 o 10 minutos</span>
+<blockquote class="verse" style="margin-left:0">“Inhalo, calmo cuerpo y mente. Exhalo, sonrío.”<cite>Thich Nhat Hanh</cite></blockquote></div>
+<div class="halo n" aria-hidden="true"><i></i></div>
+</div></div></section>
+
+<section class="scene s-night closing" style="--prev:#231B14" data-tone="dark"><div class="wrap">
+<h2>Empieza por tres minutos</h2>
+<p>No hace falta nada más. Un toque y la práctica sigue sola.</p>
+<button class="btn" type="button" data-open-ritual>Respira 3 minutos con AURA</button>
+</div></section>
+
+<section class="scene s-deep" id="rituales" data-tone="dark"><div class="wrap">
+<p class="when">con las estaciones</p><h2>Rituales</h2>
+<p class="lead">Pequeños rituales para marcar el paso del año: un reset pensado para cada equinoccio y cada solsticio.</p>
+<ul class="cards">
+<li><h3>Equinoccio de otoño</h3><p><a href="https://www.instagram.com/aurayogareset" rel="noopener">Ya en Instagram</a></p></li>
+<li><h3>Solsticio de invierno</h3><p>Diciembre, próximamente</p></li>
+</ul>
+</div></section>
+
+<section class="scene s-night" id="encuentros" style="--prev:#1A140E" data-tone="dark"><div class="wrap narrow">
+<p class="when">próximamente</p><h2>Encuentros</h2>
+<p class="lead">Reuniones pequeñas y cuidadas al detalle: una práctica, un espacio bonito y tiempo para quedarse un rato más. El primero será en Barcelona, con plazas muy limitadas.</p>
+<form class="form aura-form">
+<label class="t" for="em-home">Tu email, y te avisamos primero</label>
+<div class="row"><input id="em-home" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="espaciocreativoaura@gmail.com"><button class="btn" type="submit">Avísame del primero</button></div>
+<input type="hidden" name="ciudad" value=""><input type="hidden" name="origen" value="home">
+<div class="hp" aria-hidden="true"><label>No rellenes esto <input name="empresa" tabindex="-1" autocomplete="off"></label></div>
+<label class="consent"><input type="checkbox" name="consentimiento" value="si" required><span>Acepto que AURA use mi email para avisarme de encuentros y novedades. Puedo darme de baja cuando quiera.</span></label>
+<p class="status" role="status" aria-live="polite"></p>
+</form>
+<p class="alt">¿Prefieres Instagram? Escríbenos <a href="https://ig.me/m/aurayogareset" rel="noopener">“encuentro”</a> y te avisamos igual.</p>
+</div></section>
+
+<section class="scene s-deep" id="preguntas" data-tone="dark"><div class="wrap narrow">
+<h2>Preguntas</h2>
+<div class="faq"><details><summary>¿Qué es el yoga somático?</summary><p>Una forma de practicar yoga que presta atención a cómo se siente el cuerpo por dentro. Se hace con movimientos lentos y respiración suave, y no busca la postura perfecta.</p></details><details><summary>¿Necesito experiencia previa?</summary><p>No. Las prácticas son breves y están pensadas para encajar en un día normal.</p></details><details><summary>¿Cuánto duran las prácticas?</summary><p>Entre 5 y 10 minutos. Morning dura 5 o 10, After Work 5, Too Much 7 y Night 5 o 10.</p></details><details><summary>¿Dónde se practica?</summary><p>AURA se mueve entre Barcelona y Las Palmas de Gran Canaria. El primer encuentro será en Barcelona, con plazas muy limitadas.</p></details><details><summary>¿Sustituye a la terapia o a la atención médica?</summary><p>No. AURA es yoga somático y no sustituye la atención médica ni psicológica.</p></details><details><summary>¿Cómo me entero del primer encuentro?</summary><p>Deja tu email en esta página o escríbenos “encuentro” por Instagram, y te avisamos primero.</p></details></div>
+</div></section>
+
+<section class="scene s-night about" id="sobre" style="--prev:#1A140E" data-tone="dark"><div class="wrap narrow">
+<p class="when">quién hay detrás</p><h2>Sobre AURA</h2>
+<p class="lead">AURA nació en Las Palmas de Gran Canaria y hoy se mueve entre Barcelona y Las Palmas, entre el Atlántico y el Mediterráneo.</p>
+<p>Para mí el yoga es volver a casa: al cuerpo, a la respiración, a lo que de verdad importa. Cuando respiras con atención, el cuerpo encuentra su propio ritmo y se regula. De ahí nace AURA: prácticas breves que caben en un día normal, para volver a ti.</p>
+<div class="cities"><a class="btn ghost" href="/barcelona/">AURA en Barcelona</a><a class="btn ghost" href="/las-palmas/">AURA en Las Palmas</a><a class="btn ghost" href="https://www.instagram.com/aurayogareset" rel="noopener">Hablemos en @aurayogareset</a></div>
+</div></section>
+
+</main>
+<footer class="foot"><div class="wrap">
+<ul class="links"><li><a href="/">Inicio</a></li><li><a href="/barcelona/">Barcelona</a></li><li><a href="/las-palmas/">Las Palmas</a></li><li><a href="https://www.instagram.com/aurayogareset" rel="noopener">Instagram</a></li><li><a href="https://ig.me/m/aurayogareset" rel="noopener">¿Para tu equipo? Escríbenos</a></li></ul>
+<p>AURA, yoga somático. No sustituye la atención médica ni psicológica.</p>
+<details><summary>Privacidad</summary>
+<p>Responsable:  Finalidad: avisarte del primer encuentro y de las novedades de AURA. Base legal: tu consentimiento. Destinatarios: [la herramienta de email que uses]. Derechos: acceso, rectificación, supresión y otros, escribiendo a [tu email de contacto]. Esta web no usa cookies de seguimiento.</p></details>
+</div></footer>
+<script src="/assets/config.js"></script>
+<script src="/assets/aura.js"></script>
+</body>
 </html>
